@@ -1,0 +1,101 @@
+    /* Apply to whole page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  .profile-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  .profile-header {
+    background-color: black;
+    padding: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+ 
+    
+  }
+
+  .profile-header h2{
+  color: white;
+  }
+  
+  /* Info section */
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    flex: 1 1 30%;
+    text-align: left;
+  }
+  
+  /* Buttons / Actions */
+  .profile-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-btn {
+    background-color: #d3d3d3;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-btn:hover {
+    background-color: #bbb;
+  }
+  
+  /* Footer */
+  .profile-footer {
+    margin-top: auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: bold;
+
+  }
+  
+  .profile-footer a {
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    padding-right: 100px;
+  }
+  
+  .profile-footer a:hover {
+    text-decoration: underline;
+  }
+  

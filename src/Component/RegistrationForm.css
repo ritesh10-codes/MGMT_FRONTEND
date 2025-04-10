@@ -1,0 +1,120 @@
+/* General body and page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dlogin%2Bbackground%2Bimages&psig=AOvVaw0EH5VaVCkIAm3xBtN3O2F2&ust=1744051749608000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCm96GJxIwDFQAAAAAdAAAAABAE");
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: cover; /* Make the image cover the whole viewport or element */
+    background-position: center center; /* Position the image in the center */
+    background-attachment: fixed; /* Optional: to make the background fixed when scrolling */
+    height: 100vh;
+  }
+  
+  .registration-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    background-color: lightskyblue;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 100px;
+  }
+  
+  label {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px; /* Adjust the margin bottom to add space between labels */
+    margin-top: 10px; /* Adjust the margin top if needed */
+}
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    border: none;
+    border-radius: 20px; /* Increased border-radius for round edges */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px; /* Adjust width to fit the content */
+    box-sizing: border-box;
+
+   margin-top: 35px;
+   margin-left: 100px;
+    
+    
+    
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .success {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    .registration-container {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    label,
+    input,
+    button {
+      font-size: 14px;
+    }
+  }
+  

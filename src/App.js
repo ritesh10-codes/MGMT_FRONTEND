@@ -1,24 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
+import RegistrationForm from './Component/Register';  // Import the RegistrationForm component
+import Login from './Component/Login';
+import  PasswordChangeForm from './Component/Password';
+import UserDashboard from './Component_Dashboard/UserDashboard';
+import UserProfile from './Profile/UserProfile';
+import BookAppointment from './Book_Appointment/BookAppointment';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Routes>  {/* Define the Routes */}
+    {/* <Route path="/" element={<Home />} />  Home Page */}
+    <Route path="/login" element={<Login />} />  {/* Registration Page */}
+    <Route path="/register" element={<RegistrationForm />} />  {/* Registration Page */}
+    <Route path="/password" element={<PasswordChangeForm />} />  {/* Password change  Page */}
+    <Route path="/dashboard" element={<UserDashboard />} />  {/* Password change  Page */}
+    <Route path='/profile' element={<UserProfile />}  /> 
+    <Route path="/Book-Appointment" element={<BookAppointment />} />
+    
+
+
+  </Routes>
+  </Router>
   );
 }
 

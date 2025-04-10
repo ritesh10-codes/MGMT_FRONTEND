@@ -1,0 +1,117 @@
+/* Basic reset for consistent appearance across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dlogin%2Bbackground%2Bimages&psig=AOvVaw0EH5VaVCkIAm3xBtN3O2F2&ust=1744051749608000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCm96GJxIwDFQAAAAAdAAAAABAE");
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  background-size: cover; /* Make the image cover the whole viewport or element */
+  background-position: center center; /* Position the image in the center */
+  background-attachment: fixed; /* Optional: to make the background fixed when scrolling */
+  }
+  
+  /* Style for the login container */
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: lightblue;  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading Style */
+  .login-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input field styling */
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+  }
+  
+  /* Focus effect for inputs */
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Error message styling */
+  .error {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit button styling */
+  button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 40%;
+    margin-left: 100px;
+    
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.additional-options{
+  margin-top: 40px;
+}
+  
+  .additional-options a {
+    display: inline-block; /* Ensures margin is applied properly */
+    margin-bottom: 10px; /* Optionally add margin for space between the links */
+  }
+  
+  /* Button disabled state */
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 15px;
+      width: 90%;  /* Adjust width for mobile */
+    }
+  
+    button {
+      padding: 14px;  /* Increase button padding on small screens */
+      width: 10px;
+      margin-right: 100px;
+    }
+  
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;  /* Increase padding for better touch targets */
+    }
+  }
+  

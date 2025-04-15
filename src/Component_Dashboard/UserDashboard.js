@@ -41,10 +41,16 @@ const UserDashboard = () => {
         <Link to="/Book-Appointment" className="card">
           BOOK APPOINTMENT
         </Link>
-
-        <button className="card">APPOINTMENT HISTORY</button>
-        <button className="card">PRESCRIPTION</button>
-        <button className="card">DOCTORS LIST </button>
+        <Link to="/Appointment_History" className="card">
+        APPOINTMENT  HISTORY
+        </Link>
+        <Link to="/Prescriptions" className="card">
+        PRESCRIPTION
+        </Link>
+        <Link to="/Doctor-List" className="card">
+        DOCTORS LIST
+        </Link>
+        {/* <button className="card"> </button> */}
         {/* <button className="card"></button> */}
       </div>
 

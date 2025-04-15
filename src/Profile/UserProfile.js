@@ -40,7 +40,8 @@ const UserProfile = () => {
       </div>
 
       <div className="profile-actions">
-        <Link to="/appointments" className="profile-btn">APPOINTMENT</Link>
+        <Link to="/Book-Appointment" className="profile-btn">Book APPOINTMENT</Link>
+        <Link to="/Appointment_History" className="profile-btn">Appointment History</Link>
         <Link to="/prescriptions" className="profile-btn">PRESCRIPTION</Link>
         <Link to="/settings" className="profile-btn">SETTINGS</Link>
       </div>

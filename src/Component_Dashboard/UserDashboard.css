@@ -1,6 +1,6 @@
 /* UserDashboard.css */
 body{
-    background-image: url('E:\Hospital_Mngmt\mgmt_2\front\myapp\src\image.png');
+    background-image: url('E:\Hospital_Mngmt\MGMT_Main\Front\MGMT_FRONTEDN\src\image.jpg');
     background-repeat: no-repeat;
   background-size: cover; /* or contain */
   background-position: center;
@@ -55,6 +55,8 @@ body{
     justify-items: center;
     margin-bottom: auto;
     margin-right: 100px;
+    gap: 100px
+    
   }
   
   .card {
@@ -71,6 +73,9 @@ body{
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px ;
+   
   }
   
   .card:hover {

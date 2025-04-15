@@ -1,0 +1,79 @@
+/* Container */
+.history-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Header */
+  .history-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .history-header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2e7d32;
+  }
+  
+  /* Tab Buttons */
+  .tab-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .tab-switcher button {
+    padding: 10px 20px;
+    border: 2px solid #2e7d32;
+    background-color: white;
+    color: #2e7d32;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-switcher button:hover {
+    background-color: #e8f5e9;
+  }
+  
+  .tab-switcher .active {
+    background-color: #2e7d32;
+    color: white;
+  }
+  
+  /* Appointment List */
+  .appointment-list {
+    margin-top: 30px;
+  }
+  
+  /* Appointment Card */
+  .appointment-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #66bb6a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+  }
+  
+  .appointment-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .appointment-card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .appointment-card strong {
+    color: #333;
+  }
+  

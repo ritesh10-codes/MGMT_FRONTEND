@@ -1,0 +1,61 @@
+.doctor-list-container {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: auto;
+}
+
+.doctor-list-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1a73e8;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+/* Container for each doctor */
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  /* Space between the doctor cards */
+}
+
+/* Styling for each doctor's card */
+.doctor-card {
+  background-color: #f4f6f8; /* Light background for each card */
+  border-radius: 10px;
+  width: 300px;  /* Adjust the width for each doctor card */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover {
+  background-color: #e3f2fd; /* Light blue background on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+.doctor-name {
+  color: #1a237e;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.doctor-specialization {
+  color: #5f6368;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .doctor-card {
+    width: 100%; /* Make each card take full width on smaller screens */
+  }
+}

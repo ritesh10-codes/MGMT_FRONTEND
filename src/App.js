@@ -7,7 +7,8 @@ import  PasswordChangeForm from './Component/Password';
 import UserDashboard from './Component_Dashboard/UserDashboard';
 import UserProfile from './Profile/UserProfile';
 import BookAppointment from './Book_Appointment/BookAppointment';
-
+import DoctorList from './Docotor_List/Doctor_list';
+import AppointmentHistory from './Appointment_History/AppointmentHistory';
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
     <Route path="/dashboard" element={<UserDashboard />} />  {/* Password change  Page */}
     <Route path='/profile' element={<UserProfile />}  /> 
     <Route path="/Book-Appointment" element={<BookAppointment />} />
+    <Route path="/Doctor-List" element={<DoctorList />} />
+    <Route path="/Appointment_History" element={<AppointmentHistory />} />
+
+  
     
 
 

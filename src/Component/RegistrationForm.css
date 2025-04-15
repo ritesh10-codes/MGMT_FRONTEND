@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3Dlogin%2Bbackground%2Bimages&psig=AOvVaw0EH5VaVCkIAm3xBtN3O2F2&ust=1744051749608000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPCm96GJxIwDFQAAAAAdAAAAABAE");
+    background-image: url("E:\Hospital_Mngmt\MGMT_Main\Front\MGMT_FRONTEDN\src\image.jpg");
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-size: cover; /* Make the image cover the whole viewport or element */
     background-position: center center; /* Position the image in the center */

@@ -15,7 +15,7 @@ function App() {
     <Router>
     <Routes>  {/* Define the Routes */}
     {/* <Route path="/" element={<Home />} />  Home Page */}
-    <Route path="/login" element={<Login />} />  {/* Registration Page */}
+    <Route path="/" element={<Login />} />  {/* Registration Page */}
     <Route path="/register" element={<RegistrationForm />} />  {/* Registration Page */}
     <Route path="/password" element={<PasswordChangeForm />} />  {/* Password change  Page */}
     <Route path="/dashboard" element={<UserDashboard />} />  {/* Password change  Page */}

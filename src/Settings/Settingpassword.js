@@ -17,12 +17,12 @@ const UpdatePasswordForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (formData.newPassword !== formData.confirmPassword) {
       alert('New Password and Confirm Password do not match!');
       return;
     }
-
+  
     try {
       const response = await fetch('https://hospitalmgmt1.vercel.app/api/change-password', {
         method: 'POST',
@@ -34,24 +34,25 @@ const UpdatePasswordForm = () => {
           newPassword: formData.newPassword,
         }),
       });
-
+  
       if (response.ok) {
-        const data = await response.json();
-        alert('Password updated successfully!');
+        const data = await response.text(); // notice this
+        alert(data || 'Password updated successfully!');
         setFormData({
           email: '',
           newPassword: '',
           confirmPassword: '',
         });
       } else {
-        const errorData = await response.json();
-        alert(errorData.message || 'Failed to update password.');
+        const errorText = await response.text(); // notice this
+        alert(errorText || 'Failed to update password.');
       }
     } catch (error) {
       alert('Server error. Please try again later.');
       console.error('Error:', error);
     }
   };
+  
 
   return (
     <div className="form-container">

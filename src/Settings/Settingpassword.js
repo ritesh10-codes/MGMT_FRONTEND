@@ -24,7 +24,7 @@ const UpdatePasswordForm = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8080/change-password', {
+      const response = await fetch('https://hospitalmgmt1.vercel.app/update-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

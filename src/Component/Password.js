@@ -47,7 +47,7 @@ const PasswordChangeForm = () => {
 
       if (response.data.success) {
         setSuccessMessage('Password changed successfully!');
-        Navigate('/login')
+        Navigate('/')
       } else {
         setError(response.data.message || 'Something went wrong.');
       }

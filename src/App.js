@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
 import RegistrationForm from './Component/Register';  // Import the RegistrationForm component
@@ -9,6 +9,9 @@ import UserProfile from './Profile/UserProfile';
 import BookAppointment from './Book_Appointment/BookAppointment';
 import DoctorList from './Docotor_List/Doctor_list';
 import AppointmentHistory from './Appointment_History/AppointmentHistory';
+import SettingsPage from './Settings/Setting';
+// import ChangePassword from './Settings/Change_Passoword';
+import UpdatePasswordForm from './Settings/Settingpassword';
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
     <Route path="/Book-Appointment" element={<BookAppointment />} />
     <Route path="/Doctor-List" element={<DoctorList />} />
     <Route path="/Appointment_History" element={<AppointmentHistory />} />
+    <Route path="/settings" element={<SettingsPage />} />
+    {/* <Route path="/change-password" element={<ChangePassword />} /> */}
+    <Route path="/update-password" element={<UpdatePasswordForm />} />
 
   
     

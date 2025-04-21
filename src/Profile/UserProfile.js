@@ -50,7 +50,7 @@ const UserProfile = () => {
         <a href="#">READ ABOUT HEALTH</a>
         <a href="#">HELP CENTER</a>
         <a href="#">ABOUT US</a>
-        <a href="#">SETTINGS</a>
+        <a href="/settings">SETTINGS</a>
       </footer>
     </div>
   );

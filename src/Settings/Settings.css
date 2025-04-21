@@ -1,0 +1,123 @@
+/* Full page background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #74ebd5, #ACB6E5); /* Nice gradient */
+    font-family: 'Poppins', sans-serif; /* Optional: better font */
+  }
+  
+  /* Centering the container vertically and horizontally */
+  .settings-container {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+  }
+  
+  /* Button container */
+  .settings-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Common button style */
+  .settings-btn {
+    padding: 12px;
+    border-radius: 8px;
+    /* color: #fff; */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Hover effect for all buttons */
+  .settings-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Update Profile button */
+  .update-btn {
+    background-color: #007bff;
+    width: 200px;
+    margin-right: 100px;
+  }
+  .update-btn:hover {
+    background-color: #0056b3;
+    
+  }
+  
+  /* Change Password button */
+  .password-btn {
+    background-color: #28a745;
+    width: 200px;
+    margin-right: 100px;
+  }
+  .password-btn:hover {
+    background-color: #1e7e34;
+    
+  }
+  
+  /* Logout button */
+  .logout-btn {
+    background-color: #dc3545;
+    width: 200px;
+    margin-right: 100px;
+  }
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Form container for Change Password */
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Form group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #007bff;
+  }
+  
+  /* Message (for success/error) */
+  .message {
+    margin-top: 10px;
+    font-size: 15px;
+    color: red;
+    text-align: center;
+  }
+  

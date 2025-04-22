@@ -74,7 +74,7 @@
 
         try {
           console.log(formData); // Debugging formData to check if fullName is included
-          const response = await axios.post('https://hospitalmgmt1.vercel.app/register', formData);
+          const response = await axios.post('https://hospitalmgmt1.vercel.app/api/register', formData);
 
           // Assuming backend responds with a success message
           alert('Registration Successful');

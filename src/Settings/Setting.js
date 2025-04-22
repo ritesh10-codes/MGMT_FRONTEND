@@ -6,7 +6,7 @@ const SettingsPage = () =>   {
   const navigate = useNavigate()  ;
 
   const handleLogout = () => {
-    console.log("Logging ou...");
+    console.log("Logging out...");
     // Clear localStorage or session data if needed
     localStorage.clear();
     navigate("/"); // Redirect to login page

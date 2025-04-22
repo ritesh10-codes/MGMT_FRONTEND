@@ -2,11 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import './Settings.css'; // Ensure the correct path to the CSS file
 
-const SettingsPage = () => {
-  const navigate = useNavigate();
+const SettingsPage = () =>   {
+  const navigate = useNavigate()  ;
 
   const handleLogout = () => {
-    console.log("Logging out...");
+    console.log("Logging ou...");
     // Clear localStorage or session data if needed
     localStorage.clear();
     navigate("/"); // Redirect to login page

@@ -39,7 +39,7 @@ const PasswordChangeForm = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/api/change-password', payload, {
+      const response = await axios.post('https://mgmt-backend.onrender.com/api/change-password', payload, {
         headers: {
           'Content-Type': 'application/json',
         },

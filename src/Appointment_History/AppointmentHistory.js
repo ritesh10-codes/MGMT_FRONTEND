@@ -9,7 +9,7 @@ const AppointmentHistory = () => {
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/appointments");
+        const response = await axios.get("https://mgmt-backend.onrender.com/appointments");
         console.log("Fetched appointments:", response.data); // 👈 Add this
         setAppointments(response.data);
       } catch (error) {

@@ -17,7 +17,7 @@ const BookAppointment = () => {
     // Fetch doctor list from backend
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/api/doctors');
+        const response = await axios.get('https://mgmt-backend.onrender.com/api/doctors');
         setDoctors(response.data);
       } catch (error) {
         console.error('Error fetching doctors:', error);
@@ -43,7 +43,7 @@ const BookAppointment = () => {
     }
 
     try {
-      await axios.post('http://localhost:8080/api/appointments', formData);
+      await axios.post('https://mgmt-backend.onrender.com/api/appointments', formData);
       alert('Appointment booked successfully!');
     } catch (error) {
       console.error('Booking failed:', error);

@@ -74,7 +74,7 @@
 
         try {
           console.log(formData); // Debugging formData to check if fullName is included
-          const response = await axios.post('http://localhost:8080/api/register', formData);
+          const response = await axios.post('https://mgmt-backend.onrender.com/api/register', formData);
 
           // Assuming backend responds with a success message
           alert('Registration Successful');

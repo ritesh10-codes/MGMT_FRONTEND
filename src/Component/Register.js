@@ -87,7 +87,7 @@
           });
 
           // Redirect to login page after successful registration
-          navigate('/login'); // Updated navigation
+          navigate('/'); // Updated navigation
 
         } catch (error) {
           console.error('Error registering user', error);

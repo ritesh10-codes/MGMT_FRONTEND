@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './PasswordChangeForm.css'; // Import the CSS file
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // useNavigate instead of Navigate
 
 const PasswordChangeForm = () => {
   const [email, setEmail] = useState(''); // State for email
-  // const [oldPassword, setOldPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+
+  // Using useNavigate hook for navigation
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -30,13 +32,8 @@ const PasswordChangeForm = () => {
       return;
     }
 
-    // Create the payload with email, old password, new password, and confirm password
-    const payload = {
-      email,  // Include email in the payload
-      // oldPassword,
-      newPassword,
-      confirmPassword
-    };
+    // Create the payload with email, new password, and confirm password
+    const payload = { email, newPassword, confirmPassword };
 
     try {
       const response = await axios.post('https://mgmt-backend.onrender.com/api/change-password', payload, {
@@ -45,13 +42,15 @@ const PasswordChangeForm = () => {
         },
       });
 
+      // Check for success in response
       if (response.data.success) {
-        setSuccessMessage('Password changed successfully!');
-        Navigate('/')
+        setSuccessMessage(response.data.message); // Display success message
+        navigate('/'); // Redirect to home page (or another page)
       } else {
         setError(response.data.message || 'Something went wrong.');
       }
     } catch (error) {
+      // Error handling for failed requests
       if (error.response && error.response.data) {
         setError(error.response.data.message || 'Error communicating with the server.');
       } else {
@@ -65,7 +64,7 @@ const PasswordChangeForm = () => {
       <h2 className="form-title">Change Password</h2>
       {error && <p className="error-message">{error}</p>}
       {successMessage && <p className="success-message">{successMessage}</p>}
-      
+
       <form onSubmit={handleSubmit} className="password-change-form">
         <div className="form-field">
           <label htmlFor="email">Email</label>
@@ -77,17 +76,6 @@ const PasswordChangeForm = () => {
             required
           />
         </div>
-
-        {/* <div className="form-field">
-          <label htmlFor="oldPassword">Old Password</label>
-          <input
-            type="password"
-            id="oldPassword"
-            value={oldPassword}
-            onChange={(e) => setOldPassword(e.target.value)}
-            required
-          />
-        </div> */}
 
         <div className="form-field">
           <label htmlFor="newPassword">New Password</label>

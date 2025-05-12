@@ -5,7 +5,7 @@ import { Navigate } from 'react-router-dom';
 
 const PasswordChangeForm = () => {
   const [email, setEmail] = useState(''); // State for email
-  const [oldPassword, setOldPassword] = useState('');
+  // const [oldPassword, setOldPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [error, setError] = useState('');
@@ -33,7 +33,7 @@ const PasswordChangeForm = () => {
     // Create the payload with email, old password, new password, and confirm password
     const payload = {
       email,  // Include email in the payload
-      oldPassword,
+      // oldPassword,
       newPassword,
       confirmPassword
     };
@@ -78,7 +78,7 @@ const PasswordChangeForm = () => {
           />
         </div>
 
-        <div className="form-field">
+        {/* <div className="form-field">
           <label htmlFor="oldPassword">Old Password</label>
           <input
             type="password"
@@ -87,7 +87,7 @@ const PasswordChangeForm = () => {
             onChange={(e) => setOldPassword(e.target.value)}
             required
           />
-        </div>
+        </div> */}
 
         <div className="form-field">
           <label htmlFor="newPassword">New Password</label>

@@ -20,7 +20,9 @@ const UserDashboard = () => {
       try {
         const email = localStorage.getItem("userEmail");
         const response = await axios.get(
-          `https://mgmt-backend.onrender.com/api/profile?email=${email}`
+          `https://mgmt-backend.onrender.com/api/profile?email=${email}`,{
+            withCredentials: true,
+          }
         );
         setFullName(response.data.fullname);
       } catch (error) {

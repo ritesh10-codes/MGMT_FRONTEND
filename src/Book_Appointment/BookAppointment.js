@@ -17,7 +17,9 @@ const BookAppointment = () => {
     // Fetch doctor list from backend
     const fetchDoctors = async () => {
       try {
-        const response = await axios.get('https://mgmt-backend.onrender.com/api/doctors');
+        const response = await axios.get('https://mgmt-backend.onrender.com/api/doctors',{
+          withCredentials: true
+        });
         setDoctors(response.data);
       } catch (error) {
         console.error('Error fetching doctors:', error);

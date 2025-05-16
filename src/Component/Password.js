@@ -40,6 +40,8 @@ const PasswordChangeForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
+      },{
+        withCredentials: true
       });
 
       // Check for success in response

@@ -6,7 +6,9 @@ const DoctorList = () => {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
-    axios.get("https://mgmt-backend.onrender.com/api/doctors")
+    axios.get("https://mgmt-backend.onrender.com/api/doctors",{
+      withCredentials: true
+    })
       .then(res => {
         setDoctors(res.data);
       })
